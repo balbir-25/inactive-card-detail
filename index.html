@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <!-- ======================================START MAIN AREA========================== -->
+    <main class="site">
+      <div class="card">
+        <div class="front">
+          <img src="./images/card-logo.svg" alt="logo" class="logo" />
+          <h1 class="front-h1">0000 0000 0000 0000</h1>
+          <div class="name">
+            <p class="name-para">Jane Appleseed</p>
+            <p class="date-para"><span class="month">00</span>/<span class="year">00</span></p>
+          </div>
+        </div>
+        <div class="back">
+          <p class="cv-para">000</p>
+        </div>
+      </div>
+      <!-- ===============================START INFO AREA=================================== -->
+      <div class="info">
+        <form action="#" class="info-form">
+            <h2 class="info-h2">Cardholder Name</h2>
+            <input type="text" name="cardholder-name" class="form-input" id="name" placeholder=" e.g. Jane Appleseed">
+            <p class="error">Can't be blank</p>
+            <h2 class="info-h2">Card Number</h2>
+            <input type="text" name="card-number" class="form-input" id="number" placeholder="e.g. 1234 5678 9123 0000">
+            <p class="error1">Wrong format, number only</p>
+            <p class="error">can't be blank</p>
+            <div class="num">
+                <div class="date">
+                <h2 class="info-h2">Exp. Date (MM/YY)</h2>
+                <div class="year">
+                <input type="text" name="month" class="year-input form-input" id="month" placeholder="MM" >
+                <input type="text" name="year" class="year-input form-input" id="year" placeholder="YY" >
+                </div>
+                <p class="error">can't be blank</p>
+                </div>
+                <div class="cv">
+                    <h2 class="info-h2">CVC</h2>
+                    <input type="text" name="cvc" class="form-input cv-input" id="cv" placeholder="e.g. 123">
+                    <p class="error">can't be blank</p>
+                </div>
+            </div>
+        </form>
+        <button class="btn">Confirm</button>
+      </div>
+<!-- ==============================================END INFO AREA========================= -->
+<!-- ==============================================START THANK AREA========================= -->
+<div class="thank">
+  <img src="./images/icon-complete.svg" alt="check" class="check">
+  <h1 class="thank-h1">Thank you!</h1>
+  <p class="thank-para">We've added your card details</p>
+  <button class="btn1">Continue</button>
+</div>
+<!-- ==============================================END THNAK AREA========================= -->
+    </main>
+    <!-- ======================================END MAIN AREA========================== -->
+    <!-- ================================START FOOTER AREA========================= -->
+    <footer class="foot">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="http://balbir-portfolio.liveblog365.com/" target="_blank"
+        >Balbir Singh</a
+      >.
+    </footer>
+    <!-- ================================END FOOTER AREA========================= -->
+    <script src="./index.js"></script>
+  </body>
+</html>
